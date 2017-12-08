@@ -124,13 +124,12 @@
           <ul class="treeview-menu">
            <li><a href="../inventory/asset"><i class="fa fa-circle-o"></i> Expense management</a></li>
             <li><a href="../inventory/stock"><i class="fa fa-circle-o"></i> Stock managemenet</a></li>
+           <li><a href="../../../purchaselist"><i class="fa fa-circle-o"></i> Data table of purchase</a></li>
+            <li><a href="../../../selllist"><i class="fa fa-circle-o"></i> Data table of sell</a></li>
+            <li><a href="../../../stocklist"><i class="fa fa-circle-o"></i> Data table of stock</a></li>
+            <li><a href="../../../expenselist"><i class="fa fa-circle-o"></i> Data table of expense</a></li>
           </ul>
         </li>
-        <!-- <li>
-          <a href="../calendar">
-            <i class="fa fa-calendar"></i> <span>Calendar</span>
-          </a>
-        </li> -->
       </ul>
     </section>
   </aside>

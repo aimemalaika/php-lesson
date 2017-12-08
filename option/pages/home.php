@@ -110,18 +110,12 @@
           <ul class="treeview-menu">
             <li><a href="inventory/asset"><i class="fa fa-circle-o"></i> Expenses tracking</a></li>
             <li><a href="inventory/stock"><i class="fa fa-circle-o"></i> Stock management</a></li>
+            <li><a href="../../purchaselist"><i class="fa fa-circle-o"></i> Data table of purchase</a></li>
+            <li><a href="../../selllist"><i class="fa fa-circle-o"></i> Data table of sell</a></li>
+            <li><a href="../../stocklist"><i class="fa fa-circle-o"></i> Data table of stock</a></li>
+            <li><a href="../../expenselist"><i class="fa fa-circle-o"></i> Data table of expense</a></li>
           </ul>
         </li>
-       <!--  <li>
-          <a href="calendar">
-            <i class="fa fa-calendar"></i> <span>Calendar</span>
-          </a>
-        </li> -->
-        <!-- <li>
-          <a href="mailbox/mailbox">
-            <i class="fa fa-envelope"></i> <span>Mailbox</span>
-          </a>
-        </li> -->
       </ul>
     </section>
   </aside>
@@ -185,7 +179,6 @@
         </div>
         <h2 class="text-center">SELLS OPTIONS</h2>
         <div class="col-md-4">
-         
           <div class="box box-widget widget-user-2">
             <div class="widget-user-header skin-blue "> 
               <h3 class="widget-user-username">sell cash</h3>
@@ -219,7 +212,6 @@
           </div>
         </div>
         <div class="col-md-4">
-         
           <div class="box box-widget widget-user-2">
             <div class="widget-user-header skin-blue "> 
               <h3 class="widget-user-username">sell report</h3>
@@ -237,7 +229,6 @@
         </div>
         <h2 class="text-center">EXPENSE OPTIONS</h2>
         <div class="col-md-4">
-         
           <div class="box box-widget widget-user-2">
             <div class="widget-user-header skin-blue "> 
               <h3 class="widget-user-username">Expenses trackingt</h3>
@@ -254,7 +245,70 @@
           </div>
         </div>
         <div class="col-md-4">
-         
+          <div class="box box-widget widget-user-2">
+            <div class="widget-user-header skin-blue "> 
+              <h3 class="widget-user-username">Expenses list</h3>
+            </div>
+            <div class="box-footer no-padding">
+              <ul class="nav nav-stacked">
+                <BR>
+                <li style="padding:20px";>Cliking here you will be able to view full details of your expenses</span></li>
+                <BR>
+                <li><a class="text-center" href="../../expenselist">Click here to enter</a></li>
+                <BR>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box box-widget widget-user-2">
+            <div class="widget-user-header skin-blue "> 
+              <h3 class="widget-user-username">Stock list</h3>
+            </div>
+            <div class="box-footer no-padding">
+              <ul class="nav nav-stacked">
+                <BR>
+                <li style="padding:20px";>Cliking here you will be able to view full details of your expenses</span></li>
+                <BR>
+                <li><a class="text-center" href="../../stocklist">Click here to enter</a></li>
+                <BR>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box box-widget widget-user-2">
+            <div class="widget-user-header skin-blue "> 
+              <h3 class="widget-user-username">Purchase list</h3>
+            </div>
+            <div class="box-footer no-padding">
+              <ul class="nav nav-stacked">
+                <BR>
+                <li style="padding:20px";>Cliking here you will be able to view full details of your expenses</span></li>
+                <BR>
+                <li><a class="text-center" href="../../purchaselist">Click here to enter</a></li>
+                <BR>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box box-widget widget-user-2">
+            <div class="widget-user-header skin-blue "> 
+              <h3 class="widget-user-username">Sell list</h3>
+            </div>
+            <div class="box-footer no-padding">
+              <ul class="nav nav-stacked">
+                <BR>
+                <li style="padding:20px";>Cliking here you will be able to view full details of your expenses</span></li>
+                <BR>
+                <li><a class="text-center" href="../../selllist">Click here to enter</a></li>
+                <BR>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
           <div class="box box-widget widget-user-2">
             <div class="widget-user-header skin-blue "> 
               <h3 class="widget-user-username">Stock management</h3>
