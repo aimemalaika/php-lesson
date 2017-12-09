@@ -2,7 +2,7 @@
 
 		if (isset($_POST['submit']) AND !empty(trim($_POST['shopname'])) AND !empty(trim($_POST['telnum']))) {
 
-			$shopname = htmlspecialchars($_POST['shopname']);
+			$shopname = htmlspecialchars(ucwords($_POST['shopname']));
 			$telnum = htmlspecialchars($_POST['telnum']);
 
 			$timing = date("m");

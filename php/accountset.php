@@ -1,13 +1,13 @@
 <?php
   session_start();
-	include 'bddprincipal.php';
-	if (isset($_POST['submit'])) {
-		if (!empty($_POST['setname']) AND !empty($_POST['setemail']) AND !empty($_POST['settel']) AND !empty($_POST['setpass']) AND !empty($_POST['setpass2'])){
-					 		$setname = htmlspecialchars($_POST['setname']);
-							$setemail = htmlspecialchars($_POST['setemail']);
-							$settel = htmlspecialchars($_POST['settel']);
-							$setpass = sha1($_POST['setpass']);
-							$setpass2 = sha1($_POST['setpass2']);
+  include 'bddprincipal.php';
+  if (isset($_POST['submit'])) {
+    if (!empty($_POST['setname']) AND !empty($_POST['setemail']) AND !empty($_POST['settel']) AND !empty($_POST['setpass']) AND !empty($_POST['setpass2'])){
+              $setname = htmlspecialchars(ucwords($_POST['setname']));
+              $setemail = htmlspecialchars($_POST['setemail']);
+              $settel = htmlspecialchars($_POST['settel']);
+              $setpass = sha1($_POST['setpass']);
+              $setpass2 = sha1($_POST['setpass2']);
 
               $checksetmail = $con->prepare("SELECT * FROM memberaccount WHERE setemail = ?");
               $checksetmail->execute(array($setemail));
@@ -39,9 +39,9 @@
               }else {
                 $erreur = "this email is already taken";
               }
-		}else {
-		  $erreur = "Fill all field";
-		}
-	}
+    }else {
+      $erreur = "Fill all field";
+    }
+  }
 
 ?>
