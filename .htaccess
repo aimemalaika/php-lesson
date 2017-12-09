@@ -1,3 +1,24 @@
 RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+
+RewriteCond %{HTTP_HOST} ^ihuza\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.ihuza.com/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^www.ihuza\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.ihuza.com/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^www.admin.ihuza\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.ihuza.com/$1 [R,L]
+
+
+RewriteCond %{HTTP_HOST} ^admin.ihuza\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.ihuza.com/$1 [R,L]
