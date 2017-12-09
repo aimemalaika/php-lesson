@@ -41,10 +41,10 @@
 
   <header class="main-header">
 
-    <a href="../../index2.html" class="logo">
-      <span class="logo-mini"><b>A</b>LT</span>
+    <a href="" class="logo">
+      <span class="logo-mini"><b>IHUZA</span>
       
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b><?=$_SESSION['shopname']?></span>
     </a>
    
     <nav class="navbar navbar-static-top">
@@ -157,10 +157,10 @@
           <ul class="treeview-menu">
             <li><a href="../inventory/asset"><i class="fa fa-circle-o"></i> Expense management</a></li>
             <li><a href="../inventory/stock"><i class="fa fa-circle-o"></i> Stock management</a></li>
-            <li><a href="../../../purchaselist"><i class="fa fa-circle-o"></i> Data table of purchase</a></li>
-            <li><a href="../../../selllist"><i class="fa fa-circle-o"></i> Data table of sell</a></li>
-            <li><a href="../../../stocklist"><i class="fa fa-circle-o"></i> Data table of stock</a></li>
-            <li><a href="../../../expenselist"><i class="fa fa-circle-o"></i> Data table of expense</a></li>
+            <li><a href="../../purchaselist"><i class="fa fa-circle-o"></i> Data table of purchase</a></li>
+            <li><a href="../../selllist"><i class="fa fa-circle-o"></i> Data table of sell</a></li>
+            <li><a href="../../stocklist"><i class="fa fa-circle-o"></i> Data table of stock</a></li>
+            <li><a href="../../expenselist"><i class="fa fa-circle-o"></i> Data table of expense</a></li>
           </ul>
         </li>
         <!-- <li>

@@ -1,5 +1,6 @@
 <?php  
 	$datereceipt = date("d-M-Y");
+	//celle ci est pour le asside
 	$allstock = $con->prepare("SELECT * FROM `availablestock` WHERE `shopname` = ?");
 	$allstock->execute(array($_SESSION['shopname']));
 
@@ -30,7 +31,7 @@
 	  $summprice2 = $totale[0];
 	  
 	  $price= 0;
-	  $raport = $con->prepare("SELECT * FROM `purchase` WHERE `shopname` = ? AND `unitprice` = ?");
+	  $raport = $con->prepare("SELECT * FROM `purchase` WHERE `shopname` != ? AND `unitprice` = ?");
 	  $raport->execute(array($_SESSION['shopname'],$price));
 
 ?>
