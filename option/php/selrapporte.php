@@ -29,6 +29,8 @@
 	  $totale = $queryprice2->fetch(PDO::FETCH_NUM);
 	  $summprice2 = $totale[0];
 	  
-
+	  $price= 0;
+	  $raport = $con->prepare("SELECT * FROM `purchase` WHERE `shopname` = ? AND `unitprice` = ?");
+	  $raport->execute(array($_SESSION['shopname'],$price));
 
 ?>

@@ -171,6 +171,7 @@
               <li class="active"><a href="#activity" data-toggle="tab">General report</a></li>
               <li><a href="#timeline" data-toggle="tab">Detailed sell cash report</a></li>
               <li><a href="#timeline2" data-toggle="tab">Detailed sell credit report</a></li>
+              <li><a href="#timeline3" data-toggle="tab">Pending order</a></li>
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="activity" style="padding:0 15px;">
@@ -221,6 +222,37 @@
                 </table>
 
               </div>
+              <div class="tab-pane" id="timeline3" style="padding: 0 10%;">
+                  
+                  <h3 class="timeline-header"><a href="#">Pending purchase</a></h3>
+                    <div class="box-body box-profile">
+                      <ul class="list-group list-group-unbordered" style="display: flex;flex-wrap: wrap;">  
+                      <?php while ($sol=$raport->fetch()) {?>
+                        <li class="list-group-item" style="margin-right: 20px;">
+                         <table>
+                           <tr style="border-bottom: 1px solid;line-height: 35px;">
+                             <td><b>Product name</b></td> <td style="color: green"><b><?=$sol['itemname'] ?></b></td>
+                           </tr>
+                           <tr style="border-bottom: 1px solid;line-height: 35px;">
+                             <td><b>Quantity purchased</b></td> <td style="color: green"><b><?=$sol['quantity'] ?></b></td>
+                           </tr>
+                           <tr style="border-bottom: 1px solid;line-height: 35px;">
+                             <td><b>Client name</b></td> <td style="color: green"><b><?=$sol['clientname'] ?></b></td>
+                           </tr>
+                           <tr style="border-bottom: 1px solid;line-height: 35px;">
+                             <td><b>Supplier name</b></td> <td style="color: green"><b><?=$sol['suppliername'] ?></b></td>
+                           </tr>
+                           <tr>
+                            <form method="POST" action="../../php/upda?id=<?=$sol
+                            ['id']?>">
+                             <td><input class="form-control" type="text" name="received" placeholder="Unit price"></td><td><button type="submit" class="btn btn-default" name="upda">Confirm</button></td>
+                            </form>
+                           </tr>
+                         </table>
+                        </li>
+                    <?php } ?>
+                      </ul>
+                    </div>
             </div>
           </div>
         </div>

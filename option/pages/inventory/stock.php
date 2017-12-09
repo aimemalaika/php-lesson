@@ -284,7 +284,7 @@
                            </tr>
                            <tr>
                             <form method="POST" action="../../php/updu?id=<?=$replic['id']?>">
-                             <td><input class="form-control" type="" name="received" placeholder="Quantity received"></td><td><button type="submit" class="btn btn-default" name="updu">Submit</button></td>
+                             <td><input class="form-control" type="text" name="received" placeholder="Quantity received"></td><td><button type="submit" class="btn btn-default" name="updu">Submit</button></td>
                             </form>
                            </tr>
                          </table>
